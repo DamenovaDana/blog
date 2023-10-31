@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8'>
+    <title>To-do list</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1> Welcome to the forum! Please log in. </h1> 
+    <h3> Use username "<%=user%>" and password "<%=pass %>"  or  "<%=user2%>" and "<%=pass2%>" to log in. </h3>
+    <form action = "/" id = "login" method="post"> 
+        <label for="log"> <b>  Username </b> </label> <br>
+        <input id= "log" name="log" type="text" placeholder="Enter your username" autocomplete="off"> 
+        <label for="pass"><b> Password </b></label> <br>
+        <input id= "pass" name="pass" type="password" placeholder="Enter your password" autocomplete="off" >  <br> 
+        <button type="submit"> Log in </button>    
+    </form>
+</body>
+</html>

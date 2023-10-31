@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8'>
+    <title>To-do list</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <h1> Welcome to the <%=user %>'s blog! </h1> 
+        <ul> 
+            <% for(let i = posts.length-1; i>=0; i--){ %>
+                <% if(posts[i].length > 100){  %>
+                    <li> <%= posts[i].substring(0, 100)%> <button class="read" id ="readMore<%=i%>"  onclick="visible( '<%=i%>')"> Read more </button> 
+                        <p id="<%=i%>" style="display:none; word-wrap:break-word"> <%=posts[i].substring(100, posts[i].length) %> </p>
+                        <button id ="readLess<%=i%>" class="read" style="display:none"  onclick="visibleOff('<%=i%>')"> Read less</button> 
+                    </li>
+                       
+                <%}%>
+                <%if(posts[i].length< 100){%>
+                    <li> <%= posts[i] %></li>
+                <%}%>
+            <% }%> 
+            <script>
+            function visible(i){ 
+                document.getElementById(i).style.display = "inline";
+                document.getElementById("readMore"+i).style.display="none";
+                document.getElementById("readLess"+i).style.display="inline";
+            }function visibleOff(i){ 
+                document.getElementById(i).style.display = "none";
+                document.getElementById("readMore"+i).style.display="inline";
+                document.getElementById("readLess"+i).style.display="none";
+            }
+            </script> 
+            
+            <form action = "/add">
+            </ul>
+            <button type="submit" style="margin-top: 10px"> I want to add a post </button>    
+            
+            </form>
+</body>
+</html>

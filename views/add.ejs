@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8'>
+    <title>To-do list</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1> Hi, <%=user%>, wanna share something with the world?</h1> 
+    <form action = "/blog" method="post">
+        <textarea name="addPost"> </textarea> <br>
+        <button type="submit"> Add post </button>        
+        <h2> Your latest post was: <h2> 
+         <%=posts[posts.length-1]%> 
+    </form>
+</body>
+</html>

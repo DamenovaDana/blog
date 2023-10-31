@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url("img/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#login{
+    box-shadow: 0 2px 30px 0 rgba(0,0,0,0.2);
+    font-size: 20px;
+    margin:auto;
+    width: 500px ;
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    padding-bottom: 30px;
+}
+input{
+    width: 350px;
+    height: 40px;
+}
+label, input{
+    padding: 5px;
+    margin-top: 20px;
+    margin: auto;
+    display: block;
+}
+h1, h2, h3, label{ 
+    padding:13px;
+    margin:auto;
+    margin-top:20px;
+    width: fit-content;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+}
+
+li{ 
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: white;
+    padding:15px;
+    list-style-type: none; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    border: 1px solid transparent;
+}
+ul{
+    margin:auto;
+    width:900px;
+}
+textarea{  
+    margin-top: 35px;
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:600px;
+    height:200px;
+}
+button{
+    height: 40px;
+    background-color: white;
+    border: transparent 0px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.read{
+    display: inline-block; 
+    background-color: transparent; 
+    border: transparent 1px solid;
+    color: black;
+    text-decoration: underline;
+}
